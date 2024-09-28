@@ -4,11 +4,7 @@ import Hero from './components/Hero.vue'
 
 <template>
     <Hero></Hero>
-    <div></div>
 </template>
 
 <style scoped>
-div {
-    height: 100vh;
-}
 </style>
