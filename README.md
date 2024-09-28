@@ -1,5 +1,11 @@
-# Vue 3 + Vite
+- 👋 Hi, I’m @SimonReilich
+- 👀 I’m interested in Functional Programming, Theoretical Computer Science and Computer Architecture
+- 🌱 I’m currently in 12th grade, simultaneously studying CS at TUM since 2022
+- 📫 How to reach me: simon.reilich@proton.me
+- 😄 Pronouns: he/him
+- ⚡ Have a look at my website: www.simonreilich.github.io
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+<!---
+SimonReilich/SimonReilich is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
