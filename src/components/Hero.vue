@@ -5,13 +5,13 @@
 export default {
     data() {
         return {
-            texts: ['a Programmer', 'a Mathematician', 'a Musician', 'an Architect', 'a Student', 'a Scientist', 'Simon Reilich'],
+            texts: ['Simon Reilich'],
             text: '|',
             animation_lock: false
         }
     },
     methods: {
-        animate (text_number, char_number) {
+        animate(text_number, char_number) {
             this.text = this.texts[text_number].slice(0, char_number) + '|';
             if (text_number != this.texts.length - 1) {
                 if (char_number < this.texts[text_number].length) {
@@ -26,7 +26,7 @@ export default {
             } else if (char_number != this.texts[this.texts.length - 1].length) {
                 setTimeout(() => {
                     this.animate(text_number, char_number + 1);
-                }, 100);
+                }, 150);
             } else {
                 setTimeout(() => {
                     this.text = this.texts[text_number];
@@ -46,6 +46,7 @@ export default {
         }
     },
     mounted() {
+        window.scrollTo(0,0);
         setTimeout(() => {
             this.start_animation();
         }, 250);
@@ -55,7 +56,11 @@ export default {
 </script>
 
 <template>
-    <h1 class="poppins-bold" @mouseenter="start_animation()">Hi, I'm <br> {{ text }} <br> <button>Threads</button> <button>GitHub</button> <button>LinkedIn</button> </h1>
+    <h1 class="poppins-bold" @mouseenter="start_animation()">Hi, I'm <br> {{ text }} <br>
+        <a href="https://www.threads.net/@simon.r137">Threads</a>
+        <a href="https://github.com/SimonReilich">GitHub</a>
+        <a href="https://www.linkedin.com/in/simon-reilich-9650a1335/">LinkedIn</a>
+    </h1>
     <img src="/public/main.png">
     <div></div>
 </template>
@@ -65,8 +70,19 @@ h1 {
     z-index: 20;
 }
 
-button {
-    width: 7em;
+a {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    margin: 0.5rem;
+    padding: 0.6em 1.2em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    border: none;
+    outline: none;
 }
 
 img {
@@ -74,34 +90,26 @@ img {
 }
 
 @keyframes fadeIn {
-        0% {
-            opacity: 0%;
-        }
-        80% {
-            opacity: 0%;
-        }
-        100% {
-            opacity: 100%;
-        }
+    0% {
+        opacity: 0%;
     }
+
+    100% {
+        opacity: 100%;
+    }
+}
 
 div {
     width: 100vw;
     height: 100svh;
     z-index: -10;
-    animation: 10s ease-out 0s 1 fadeIn;
+    animation: 3s ease-out 0s 1 fadeIn;
 }
 
-button {
-    transition: ease-in-out 0.2s;
-    border: none;
-    outline: none;
-}
-
-button:hover {
+a:hover {
     cursor: pointer;
     transform: scale(1.075);
-    box-shadow: 0px 10px 30px 4px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2);
     border: none;
     outline: none;
 }
@@ -118,7 +126,7 @@ button:hover {
         transform: translate(-50%, -50%);
     }
 
-    button {
+    a {
         width: min(25vw, 12.5rem);
         height: min(10vw, 5rem);
         font-size: min(3.5vw, 1.75rem);
@@ -129,9 +137,7 @@ button:hover {
         0% {
             transform: translateY(100%);
         }
-        70% {
-            transform: translateY(100%);
-        }
+
         100% {
             transform: translateY(0%);
         }
@@ -143,7 +149,7 @@ button:hover {
         height: min(100vw, 100vh - 25rem);
         top: calc(100svh - min(100vw, 100vh - 25rem));
         left: calc((100vw - min(100vw, 100vh - 25rem)) / 2);
-        animation: 8s ease-out 0s 1 slideInFromBottom;
+        animation: 2s ease-out 0s 1 slideInFromBottom;
     }
 
     div {
@@ -155,14 +161,14 @@ button:hover {
 @media only screen and (min-width: 1500px) {
     h1 {
         text-align: left;
-        font-size: 6vw;
+        font-size: 6.5vw;
         position: absolute;
         left: max(5rem, calc(50vw - 60svh - 20rem));
         top: 40%;
         transform: translate(0%, -50%);
     }
 
-    button {
+    a {
         width: 10vw;
         height: 4vw;
         font-size: 1.5vw;
@@ -173,9 +179,7 @@ button:hover {
         0% {
             transform: translateX(120svh);
         }
-        70% {
-            transform: translateX(120svh);
-        }
+
         100% {
             transform: translateX(20svh);
         }
@@ -189,7 +193,7 @@ button:hover {
         transform: translateX(20svh);
         width: 100svh;
         height: 100svh;
-        animation: 8s ease-out 0s 1 slideInFromRight
+        animation: 2s ease-out 0s 1 slideInFromRight
     }
 
     div {
