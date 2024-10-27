@@ -6,8 +6,8 @@ export default {
     data() {
         return {
             ls: [
-                { title: "Accordion", date: "2014 - now", image: "/public/accordion.jpg", text: "I've also been very passionate about music for a long time, playing the accordion since 2nd grade. Having played in many different line-ups, from solo over band to a classical orchestra, I learned many things in the past years. I've also been to multiple competitions, including the World Music Festival in Insbruck in 2016 and 2019 (and most likely 2025 again)." },
-                { title: "Leader of TheJoCraft's Building-Team", date: "2021 - now", image: "/public/tjc.png", text: "I am a member of the Team of the german \"Minecraft\"-Youtuber \"TheJoCraft\" (team.tjcteam.de/), leading the team since summer of 2023. I not only enjoy beeing creative sometimes, but also like working together with other pepole. We've tackled many different projects as a team together, some of them you can see at my other website red-pixl.github.io/" }
+                { title: "Accordion", date: "2014 - now", image: "/accordion.jpg", text: "I've also been very passionate about music for a long time, playing the accordion since 2nd grade. Having played in many different line-ups, from solo over band to a classical orchestra, I learned many things in the past years. I've also been to multiple competitions, including the World Music Festival in Insbruck in 2016 and 2019 (and most likely 2025 again)." },
+                { title: "Leader of TheJoCraft's Building-Team", date: "2021 - now", image: "/tjc.png", text: "I am a member of the Team of the german \"Minecraft\"-Youtuber \"TheJoCraft\" (team.tjcteam.de/), leading the team since summer of 2023. I not only enjoy beeing creative sometimes, but also like working together with other pepole. We've tackled many different projects as a team together, some of them you can see at my other website red-pixl.github.io/" }
             ]
         }
     }

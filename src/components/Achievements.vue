@@ -6,7 +6,7 @@ export default {
     data() {
         return {
             ls: [
-                { title: "42. Bundeswettbewerb Informatik, First Round, First Price", date: "Fall 2023", image: "/public/bwinf.png", text: "Held by \"Gesellschaft für Informatik e.V.\", \"Fraunhofer-Verbund IUK-Technologie\", and the \"Max-Planck-Institut für Informatik\", the \"Bundeswettbewerb Informatik\", BWInf for short, is one of the largest German computer-science competitions. Learn more at https://bwinf.de/" }
+                { title: "42. Bundeswettbewerb Informatik, First Round, First Price", date: "Fall 2023", image: "/bwinf.png", text: "Held by \"Gesellschaft für Informatik e.V.\", \"Fraunhofer-Verbund IUK-Technologie\", and the \"Max-Planck-Institut für Informatik\", the \"Bundeswettbewerb Informatik\", BWInf for short, is one of the largest German computer-science competitions. Learn more at https://bwinf.de/" }
             ]
         }
     }
