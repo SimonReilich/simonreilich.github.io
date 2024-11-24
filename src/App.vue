@@ -10,12 +10,6 @@ import Contact from './components/Contact.vue';
 
 <template>
     <Hero></Hero>
-    <Nav></Nav>
-    <About></About>
-    <Education></Education>
-    <Achievements></Achievements>
-    <Other></Other>
-    <Contact></Contact>
 </template>
 
 <style scoped></style>

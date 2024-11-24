@@ -57,9 +57,9 @@ export default {
 
 <template>
     <h1 class="poppins-bold" @mouseenter="start_animation()">Hi, I'm <br> {{ text }} <br>
-        <a href="https://www.threads.net/@simon.r137">Threads</a>
         <a href="https://github.com/SimonReilich">GitHub</a>
         <a href="https://www.linkedin.com/in/simon-reilich-9650a1335/">LinkedIn</a>
+        <a href="https://bsky.app/profile/redpixl.bsky.social">Bluesky</a>
     </h1>
     <img src="/public/main.png">
     <div></div>
@@ -127,7 +127,7 @@ a:hover {
     }
 
     a {
-        width: min(25vw, 12.5rem);
+        width: min(30vw, 15rem);
         height: min(10vw, 5rem);
         font-size: min(3.5vw, 1.75rem);
         border-radius: min(4vw, 2rem);
